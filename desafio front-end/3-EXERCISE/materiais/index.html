@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+	<div class="container">
+		<button id="myBtn" class="btn" autofocus>Deixe seu feedback</button>
+	</div>
+  
+    <div id="myModal" role="dialog" aria-labelledby="modal_header_label" aria-modal="true" class="modal">
+        <div class="content">
+			<span class="close">&times;</span>
+            <h2 id="modal_header_label" class="title">Deixe seu feedback</h2>
+            <div id="form">
+                <div class="form-group">
+                    <label for="name">
+						<span>Seu nome:</span>
+						<input type="text" id="name" />
+					</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Sua nota:</label>
+                    <div id="rating">
+                        <span tabindex="0" data-value="1" aria-hidden="false" aria-label="nota 1" class="rate fa fa-star"></span>
+                        <span tabindex="0" data-value="2" aria-hidden="false" aria-label="nota 2" class="rate fa fa-star"></span>
+                        <span tabindex="0" data-value="3" aria-hidden="false" aria-label="nota 3" class="rate fa fa-star"></span>
+                        <span tabindex="0" data-value="4" aria-hidden="false" aria-label="nota 4" class="rate fa fa-star"></span>
+                        <span tabindex="0" data-value="5" aria-hidden="false" aria-label="nota 5" class="rate fa fa-star"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">
+						<span>Sua mensagem:</span>
+						<textarea id="message"></textarea>
+					</label>
+                </div>
+
+                <button id="sendFeedback" class="btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./index.js" type="text/javascript"></script>
+
+</html>
